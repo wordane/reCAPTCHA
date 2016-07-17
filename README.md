@@ -1,4 +1,4 @@
-reCAPTCHA
+How to reCAPTCHA @ [Wordane](wordane.com)
 ========
 * index.php => The form for the front end
 * verify.php => The php file for the backend
