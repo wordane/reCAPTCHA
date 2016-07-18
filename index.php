@@ -11,7 +11,7 @@
             <label for="age">Age:</label>
             <input name="age" required /><br/>
             <!-- This is for the captcha and we get this from google.com/recaptcha/admin -->
-            <div class=g-recaptcha data-sitekey="6LdqTiUTAAAAAF0zdPvamqkyRHCumz_sDDidaOYr"></div>
+            <div class="g-recaptcha" data-sitekey="6LdqTiUTAAAAAF0zdPvamqkyRHCumz_sDDidaOYr"></div>
             <input type="submit" />
         </form>
 

@@ -5,7 +5,7 @@
     $recaptcha = new \ReCaptcha\ReCaptcha($privatekey);
     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER["REMOTE_ADDR"]);
     if ($resp->isSuccess()) {
-        die('Captcha verified');
+        die('Thank you. Captcha verified correctly');
     } else {
         $errors = $resp->getErrorCodes();
         print_r($errors);
