@@ -13,7 +13,6 @@
             <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_GOES_HERE"></div>
             <input type="submit" />
         </form>
-
         <!-- more of your HTML content -->
     </body>
 </html>
