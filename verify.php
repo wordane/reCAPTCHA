@@ -3,11 +3,11 @@
     $privatekey = "6LdqTiUTAAAAAHVv4TpCZ8yvuHf8RXp0Wv71agZt";
 
     $recaptcha = new \ReCaptcha\ReCaptcha($privatekey);
-    $resp = $recaptcha->verify($gRecaptchaResponse, $_SERVER["REMOTE_ADDR"]);
+    $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER["REMOTE_ADDR"]);
     if ($resp->isSuccess()) {
         die('Captcha verified');
     } else {
         $errors = $resp->getErrorCodes();
-        echo 'Errors found =>'.$errors;
+        print_r($errors);
     }
 ?>
