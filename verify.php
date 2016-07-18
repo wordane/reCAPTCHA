@@ -1,6 +1,6 @@
 <?php
     require_once('captcha/src/autoload.php');
-    $privatekey = "6LdqTiUTAAAAAHVv4TpCZ8yvuHf8RXp0Wv71agZt";
+    $privatekey = "YOUR_SECRET_KEY_GOES_HERE";
 
     $recaptcha = new \ReCaptcha\ReCaptcha($privatekey);
     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER["REMOTE_ADDR"]);
